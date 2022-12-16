@@ -7,9 +7,14 @@
 import UIKit
 
 final class ParceJsonViewController: UIViewController {
+    @IBOutlet var criptoCollectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        criptoCollectionView.delegate = self
+        criptoCollectionView.dataSource = self
+        
         
         fetchParceJsonFromApi()
     }
@@ -32,3 +37,25 @@ final class ParceJsonViewController: UIViewController {
     }
 }
 
+extension ParceJsonViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        5
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let Cell = collectionView.dequeueReusableCell(withReuseIdentifier: "criptoCell", for: indexPath) as! CriptoCollectionViewCell
+        
+        
+        return Cell
+    }
+}
+
+extension ParceJsonViewController: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        return CGSize(width: 300, height: 50)
+    }
+    
+}

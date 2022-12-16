@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12770A52294CC70900FEAB27 /* CriptoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12770A51294CC70800FEAB27 /* CriptoCollectionViewCell.swift */; };
 		1287E367294B6F4F00021A84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1287E366294B6F4F00021A84 /* AppDelegate.swift */; };
 		1287E369294B6F4F00021A84 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1287E368294B6F4F00021A84 /* SceneDelegate.swift */; };
 		1287E36B294B6F4F00021A84 /* ParceJsonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1287E36A294B6F4F00021A84 /* ParceJsonViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12770A51294CC70800FEAB27 /* CriptoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriptoCollectionViewCell.swift; sourceTree = "<group>"; };
 		1287E363294B6F4F00021A84 /* HW3.02_JsonParcing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW3.02_JsonParcing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1287E366294B6F4F00021A84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1287E368294B6F4F00021A84 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,7 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				1287E37D294B7B5B00021A84 /* Models */,
-				1287E380294B7FDB00021A84 /* DataSorces */,
+				1287E380294B7FDB00021A84 /* Services */,
 				1287E37A294B7ABD00021A84 /* Delegates */,
 				1287E37B294B7AC900021A84 /* ViewControllers */,
 				1287E37C294B7AE500021A84 /* Storybords */,
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				1287E36A294B6F4F00021A84 /* ParceJsonViewController.swift */,
+				12770A51294CC70800FEAB27 /* CriptoCollectionViewCell.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -105,12 +108,12 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		1287E380294B7FDB00021A84 /* DataSorces */ = {
+		1287E380294B7FDB00021A84 /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				1287E381294B800B00021A84 /* DataUrl.swift */,
 			);
-			path = DataSorces;
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1287E36B294B6F4F00021A84 /* ParceJsonViewController.swift in Sources */,
+				12770A52294CC70900FEAB27 /* CriptoCollectionViewCell.swift in Sources */,
 				1287E37F294B7BAB00021A84 /* Blockchain.swift in Sources */,
 				1287E367294B6F4F00021A84 /* AppDelegate.swift in Sources */,
 				1287E382294B800B00021A84 /* DataUrl.swift in Sources */,

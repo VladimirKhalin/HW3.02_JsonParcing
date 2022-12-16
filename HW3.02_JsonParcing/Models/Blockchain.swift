@@ -14,4 +14,6 @@ struct currencyAbb: Decodable {
     var USD: Blockchain
     var EUR: Blockchain
     var RUB: Blockchain
+    var PLN: Blockchain
+    var GBR: Blockchain
 }
